@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovation Excellence Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #005792;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #003f63;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #005792;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-actions input[type="text"] {
+      padding: 6px 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+      outline: none;
+      transition: width 0.3s ease;
+      width: 150px;
+    }
+
+    .nav-actions input[type="text"]:focus {
+      width: 200px;
+    }
+
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin: 0 auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: #003f63;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #003f63;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #005792;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #007ab3;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 5px;
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Innovation Excellence Indicators Portal</h1>
+  <p>Empowering institutions through measurable innovation</p>
+</header>
+
+<nav>
+  <div class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#modules">Modules</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#techstack">Technology</a>
+    <a href="#future">Future</a>
+  </div>
+  <div class="nav-actions">
+    <input type="text" placeholder="Search..." />
+    <a class="button" href="#signin">Sign In</a>
+    <a class="button" href="#signup" style="background-color: #007ab3;">Sign Up</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section id="overview" class="card">
+    <h2>Problem Overview</h2>
+    <p>Innovation in education is often under-tracked. This portal helps institutions monitor, evaluate, and celebrate innovation activities using real-time metrics, enabling better insights and outcomes.</p>
+  </section>
+
+  <section id="features" class="card">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Secure login for Admin, Faculty, and Students</li>
+      <li>Role-based access control</li>
+      <li>Custom dashboards per user role</li>
+      <li>Data import from research, grants, patents, awards</li>
+      <li>Manual and API-based automated data entry</li>
+      <li>KPI goal setting and progress monitoring</li>
+      <li>CSV, PDF, and Excel export options</li>
+      <li>Smart notifications and reminders</li>
+      <li>Recognition and digital badge system</li>
+      <li>Feedback loops, peer comments, and collaboration</li>
+      <li>Analytics on innovation impact and trends</li>
+      <li>Accessibility support and responsive design</li>
+      <li>Compliance with GDPR, FERPA, and local policies</li>
+    </ul>
+    <a class="button" href="#dashboard">View Dashboard</a>
+  </section>
+
+  <section id="modules" class="card">
+    <h2>Portal Modules</h2>
+    <ul>
+      <li><strong>User Management</strong> - Secure sign-up, sign-in, and user profiles</li>
+      <li><strong>Innovation Tracker</strong> - Log and monitor innovation activities</li>
+      <li><strong>Visualization Engine</strong> - Generate dynamic charts and graphs</li>
+      <li><strong>Reports Module</strong> - Generate monthly/annual reports</li>
+      <li><strong>Recognition Center</strong> - Milestone achievements and rewards</li>
+      <li><strong>Feedback System</strong> - User interaction and collaboration tools</li>
+    </ul>
+  </section>
+
+  <section id="dashboard" class="card">
+    <h2>Dashboard Preview</h2>
+    <p>The dashboard gives users a high-level view of KPIs, innovation metrics, and trends.</p>
+    <ul>
+      <li>Institutional innovation score</li>
+      <li>Top performing departments</li>
+      <li>Monthly trends in research output</li>
+      <li>Custom widgets for papers, patents, citations</li>
+    </ul>
+  </section>
+
+  <section id="usecases" class="card">
+    <h2>Use Cases</h2>
+    <ul>
+      <li><strong>University Deans:</strong> Measure departmental innovation performance</li>
+      <li><strong>Faculty:</strong> Track personal research and collaboration</li>
+      <li><strong>Students:</strong> Showcase contributions to research & innovation</li>
+      <li><strong>Admin:</strong> Generate reports for accreditation and rankings</li>
+    </ul>
+  </section>
+
+  <section id="techstack" class="card">
+    <h2>Technology Stack</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js</li>
+      <li><strong>Backend:</strong> Node.js / Express or Django</li>
+      <li><strong>Database:</strong> PostgreSQL / MongoDB</li>
+      <li><strong>APIs:</strong> RESTful / GraphQL</li>
+      <li><strong>Hosting:</strong> AWS / Firebase / Heroku</li>
+      <li><strong>Security:</strong> HTTPS, JWT, OAuth2</li>
+    </ul>
+  </section>
+
+  <section id="future" class="card">
+    <h2>Future Enhancements</h2>
+    <ul>
+      <li>AI-driven insights and forecasting</li>
+      <li>Gamification to increase participation</li>
+      <li>Global collaboration tools and forums</li>
+      <li>Offline mode using Progressive Web Apps (PWA)</li>
+      <li>Institution benchmarking and leaderboard system</li>
+    </ul>
+  </section>
+
+  <section id="signin" class="card">
+    <h2>Sign In</h2>
+    <p>Feature coming soon: secure login for users with different roles.</p>
+  </section>
+
+  <section id="signup" class="card">
+    <h2>Sign Up</h2>
+    <p>New users will be able to register and request access based on their institutional role.</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Innovation Excellence Portal. Built with passion for innovation.
+</footer>
+
+</body>
+</html>
